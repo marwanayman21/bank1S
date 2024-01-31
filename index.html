@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>MF Bank</title>
+</head>
+<body>
+    <!-- First Section - Home -->
+    <div id="home" class="home-section">
+        <div class="nevbar">
+            <div class="logo">
+                <a><h1><span>MF</span> Bank</h1></a>
+            </div>
+            <div class="menu" > 
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#branches">View Branches</a></li>
+                    <li><a href="#add-branches">Add Branches</a></li>
+                    <li><a href="#view-accounts">View Accounts</a></li>
+                    <li><a href="#add-account">Add Account</a></li>
+                </ul> 
+            </div>
+        </div>
+        <div class="topspace"></div>
+        <div class="cover"></div>
+        <div class="container">
+            <div style="color:white;margin-top:70px;">
+                <h3 style="font-size: 30px;">Welcome to </h3>
+                <h1 style="font-size: 40px;"> Modern Foundation Bank</h1>
+            </div>
+            <div class="allbtns">
+                <a href="#add-branches"><button type="button"> Add Branches </button></a>
+                <a href="#branches"><button type="button"> View Branches </button></a>
+                <a href="#add-account"><button type="button"> Add Account </button></a>
+                <a href="#view-accounts"><button type="button"> View Accounts </button></a>
+            </div>
+    </div>
+
+    <!-- Second Section - Add Branches -->
+    <div id="add-branches" class="add-branches-section">
+        <div class="create">
+            <h1>ADD BRANCHES</h1>
+            <div class="createUser">
+                <div>
+                    <img src="bank.png" alt="user image" style="width: 250px;height: 250px;">
+                </div>
+                <div class="userdata">
+                    <form method="POST" id="branchForm">
+                        <input id="IDB" type="number" placeholder="ID" name="ID" required>
+                        <input id="NameB" type="text" placeholder="Name" name="Name" required>
+                        <input id="Manager" type="text" placeholder="Manager" name="Manager" required>
+                        <button id="addb">ADD BRANCHES</button>
+                    </form>
+                                    
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <!-- Third Section - View Branches -->
+    <div id="branches" class="branches-section">
+        <h1 style="margin-top:4%;letter-spacing: 2px;">ALL BRANCHES</h1>
+        <div class="all_users" style="height: 500px;margin-top:4% auto;">
+            <input onkeyup="searchdata(this.value)" id="searchbar" class="searchbar" placeholder="Search by Name" name="Search" required>
+            <table><thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>Manager</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr></thead>
+                <tbody id="tbodyb">  
+                </tbody>
+            </table>
+        </div>    
+    </div>
+    <!-- Fourth Section - Add Account  -->
+
+    <div id="add-account" class="add-account-section">
+        <div class="create">
+            <h1>ADD ACCOUNT</h1>
+            <div class="createUser">
+                <div>
+                    <img src="account.png" alt="user image" style="width: 250px;height: 250px;">
+                </div>
+                <div class="userdata">
+                    <!-- Create user Form -->
+                    <form method="POST" id="accountform">
+                        <input id="IDA" type="number" placeholder="ID" name="ID" required>
+                        <input id="NameA" type="text" placeholder="Name" name="Name" required>
+                        <input id="Address" type="text" placeholder="Address" name="Address" required>
+                        <input id="Balance" type="number" placeholder="Balance" name="Balance" required>
+                        <input id="Branchename" type="text" placeholder="Branchename" name="Branchename" required>
+                        <button id="addA">ADD ACCOUNT</button>
+                    </form>
+                </div>
+            </div>
+        </div>    
+</div>
+    <!-- Fifth Section - View Accounts -->
+    <div id="view-accounts" class="view-accounts-section">   
+    <h1 style="margin-top:4%;letter-spacing: 2px;">ALL  ACCOUNTS</h1>
+    <div class="all_users" style="height: 500px;margin-top:4% auto;">
+        <input onkeyup="searchdatah(this.value)" id="searchbarA" class="searchbar" placeholder="Search by Name" name="Search" required>        
+        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody>        <table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody><table><thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>BALANCE</th>
+                <th>BRANCHENAME</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>   
+            </tr></thead>
+        <tbody id="tbodyh">  
+        </tbody> 
+    </table>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="scripta.js"></script>
+</body>
+
+</html>
